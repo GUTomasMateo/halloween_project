@@ -1,0 +1,32 @@
+body {
+  background-color: #1a001a;
+  color: #ffa31a;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0; padding: 20px;
+}
+.topbar { margin-bottom: 20px; }
+.disfraz {
+  background: #330033;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+img { border-radius: 6px; box-shadow: 0 0 10px orange; }
+.error { color: #ff9999; }
+.admin-list { width: 90%; max-width: 800px; margin: 0 auto; text-align: left; }
+.admin-item { background: #2a002a; padding: 10px; margin:8px 0; border-radius:6px; display:flex; justify-content:space-between; align-items:center; }
+.actions a { color: #ffa31a; text-decoration:none; margin-left:8px; }
+.votos { font-weight:bold; }
