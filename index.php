@@ -13,7 +13,7 @@ $res = mysqli_query($con, $sql);
   <link rel="stylesheet" href="estilos/halloween.css">
 </head>
 <body>
-  <h1>🎃 Concurso de Disfraces 🎃</h1>
+  <h1>Concurso de Disfraces</h1>
   <div class="topbar">
   <?php
   if (isset($_SESSION['usuario'])) {
@@ -41,7 +41,7 @@ $res = mysqli_query($con, $sql);
       <?php if (isset($_SESSION['id_usuario'])) { ?>
         <form method="post" action="votar.php" class="votarForm">
           <input type="hidden" name="id_disfraz" value="<?php echo (int)$r['id']; ?>">
-          <button type="submit">Votar 🎃</button>
+          <button type="submit">Votar</button>
         </form>
       <?php } else { ?>
         <p><em>Inicia sesión para votar</em></p>

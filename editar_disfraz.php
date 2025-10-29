@@ -37,14 +37,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head><meta charset="utf-8"><title>Editar</title><link rel="stylesheet" href="estilos/halloween.css"></head>
 <body>
-  <h1>Editar Disfraz</h1>
-  <?php if ($error) echo "<p class=\"error\">".htmlspecialchars($error)."</p>"; ?>
-  <form method="post" enctype="multipart/form-data">
-    <input type="text" name="nombre" value="<?php echo htmlspecialchars($r['nombre']); ?>" required>
-    <textarea name="descripcion" required><?php echo htmlspecialchars($r['descripcion']); ?></textarea>
-    <p>Foto actual: <?php echo htmlspecialchars($r['foto']); ?></p>
-    <input type="file" name="foto" accept="image/*">
-    <button type="submit">Guardar</button>
-  </form>
+    <h1>Editar Disfraz</h1>
+    <?php if ($error) echo "<p class=\"error\">".htmlspecialchars($error)."</p>"; ?>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="nombre" value="<?php echo htmlspecialchars($r['nombre']); ?>" required>
+        <textarea name="descripcion" required><?php echo htmlspecialchars($r['descripcion']); ?></textarea>
+        <p>Foto actual: <?php echo htmlspecialchars($r['foto']); ?></p>
+        <input type="file" name="foto" accept="image/*">
+        <button type="submit">Guardar</button>
+    </form>
 </body>
 </html>

@@ -27,13 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head><meta charset="utf-8"><title>Login</title><link rel="stylesheet" href="estilos/halloween.css"></head>
 <body>
-  <h1>🎃 Iniciar sesión</h1>
-  <?php if ($error) echo "<p class=\"error\">".htmlspecialchars($error)."</p>"; ?>
-  <form method="post" autocomplete="off">
-    <input type="text" name="nombre" placeholder="Usuario" required>
-    <input type="password" name="clave" placeholder="Contraseña" required>
-    <button type="submit">Entrar</button>
-  </form>
-  <p><a href="registro.php">Registrarse</a></p>
+    <h1>🎃 Iniciar sesión</h1>
+    <?php if ($error) echo "<p class=\"error\">".htmlspecialchars($error)."</p>"; ?>
+    <form method="post" autocomplete="off">
+        <input type="text" name="nombre" placeholder="Usuario" required>
+        <input type="password" name="clave" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
+    </form>
+    <p><a href="registro.php">Registrarse</a></p>
 </body>
 </html>
